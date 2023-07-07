@@ -13,21 +13,6 @@
 
 **Duración:**	170 minutos
 
-**Indicaciones:**
-
-1. El examen tiene una duración de 170 minutos para resolverlo y enviarlo.
-1. Recuerde que es su responsabilidad revisar que todos los archivos de solución cumplan lo solicitado como se indica en el presente examen.  
-1. Sobre consultas al equipo académico y reporte de problemas técnicos
-- Cada examen cuenta con un equipo académico, el cual estará conectado durante los primeros **15 minutos del examen**.
-- El alumno debe dedicar **los primeros 15 minutos** a revisar las preguntas del examen y de presentarse alguna duda enviar un correo al(los) profesor(es):
-- El correo deben enviarlo al correo de los 2 profesores con el asunto: Consulta – Examen Final Arqui. Apli. Web. En el contenido debe detallar su consulta de forma clara e indicar la sección y nombre de su profesor.
-  - Christian Sánchez Flores <pcsicsan@upc.edu.pe>
-  - Rosa Cobeñas Sanchez <pcsircob@upc.edu.pe>
-- Los profesores en mención solo recibirán correos provenientes de las cuentas UPC, de ninguna manera se recibirán correos de cuentas públicas.	
-- Ante problemas técnicos, debe de forma obligatoria adjuntar evidencias del mismo, como capturas de pantalla, videos, fotos, etc. Siendo requisito fundamental que, en cada evidencia se pueda apreciar claramente la fecha y hora del sistema operativo del computador donde el alumno está rindiendo el examen.
-- Los problemas técnicos se recibirán como **máximo 15 minutos culminado el examen**.
-- Se puede utilizar el material de clase como referencia.** 
-
 **Indicaciones de la Entrega del examen:** 
 
 1. Debe entregar **un archivo Word con las capturas de pantalla de cada una de las historias de usuario solicitadas**. En cada captura de pantalla debe visualizar **su imagen en tiempo real capturada de su cámara** junto** al funcionamiento. El nombre del archivo debe tener la siguiente nomenclatura **api\_examen\_final\_YYYY.** Donde **YYYY** debe reemplazarlo por su código de alumno sin la letra “U”. Por ejemplo, si el código de alumno fuera u2015678 el nombre del proyecto seria api\_examen\_final \_2015678
