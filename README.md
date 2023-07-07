@@ -1,6 +1,3 @@
-# ![A picture containing drawing
-
-Description automatically generated](Aspose.Words.1cf7f104-d561-4230-b28b-5ef313b66cff.001.jpeg)
 # **UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS**		
 **ARQUITECTURA DE APLICACIONES WEB (SI705)**
 
