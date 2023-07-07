@@ -1,70 +1,200 @@
 # **UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS**		
 **ARQUITECTURA DE APLICACIONES WEB (SI705)**
 
-**Enunciado:**
+**EXAMEN FINAL**
 
-**Pregunta (20 p.).**
+**2023-01**
 
-Se le encarga el desarrollo de una API REST que permita las siguientes funcionalidades.
+**Sección:** 	Todos
 
-**Requisitos funcionales**
+**Profesores:**	Todos
 
-- Registro de información
-  - Registro de cuenta bancaria (POST)
-  - Registro de transacción bancaria. (POST)
-- Listado de información
-  - Listado de todas las cuentas bancarias (GET)
-  - Listado de transacciones bancarias por nombre de cliente (GET)
-  - Listado de transacciones bancarias por rango de fechas. (GET)
-- Login
-  - Verificar las credenciales del usuario
-  - Verificar los roles del usuario
+**Hora Inicio:**   12:10 							**Hora Fin:** 15:00 pm
 
-- Roles **a asignar:** Cree dos roles a nivel de base de datos
-  - ADMINISTRADOR: Acceso solo a registrar
-  - USUARIO: Acceso solo a los listar
+**Duración:**	170 minutos
 
-Manejo de seguridad: Se podrá acceder sólo si el usuario se encuentra autenticado con token y cuenta con un rol asignado
+**Indicaciones:**
 
-**Atributos de las clases / Columnas de las tablas**
+1. El examen tiene una duración de 170 minutos para resolverlo y enviarlo.
+1. Recuerde que es su responsabilidad revisar que todos los archivos de solución cumplan lo solicitado como se indica en el presente examen.  
+1. Sobre consultas al equipo académico y reporte de problemas técnicos
+- Cada examen cuenta con un equipo académico, el cual estará conectado durante los primeros **15 minutos del examen**.
+- El alumno debe dedicar **los primeros 15 minutos** a revisar las preguntas del examen y de presentarse alguna duda enviar un correo al(los) profesor(es):
+- El correo deben enviarlo al correo de los 2 profesores con el asunto: Consulta – Examen Final Arqui. Apli. Web. En el contenido debe detallar su consulta de forma clara e indicar la sección y nombre de su profesor.
+  - Christian Sánchez Flores <pcsicsan@upc.edu.pe>
+  - Rosa Cobeñas Sanchez <pcsircob@upc.edu.pe>
+- Los profesores en mención solo recibirán correos provenientes de las cuentas UPC, de ninguna manera se recibirán correos de cuentas públicas.	
+- Ante problemas técnicos, debe de forma obligatoria adjuntar evidencias del mismo, como capturas de pantalla, videos, fotos, etc. Siendo requisito fundamental que, en cada evidencia se pueda apreciar claramente la fecha y hora del sistema operativo del computador donde el alumno está rindiendo el examen.
+- Los problemas técnicos se recibirán como **máximo 15 minutos culminado el examen**.
+- Se puede utilizar el material de clase como referencia.** 
 
-La relación es de uno a muchos desde Account (Cuenta bancaria) a Transaction (Transacción bancaria)
+**Indicaciones de la Entrega del examen:** 
 
-|Clases|Tablas|
-| :- | :- |
-|<p>Account</p><p>=======</p><p>private Long id</p><p>private String nameCustomer</p><p>private String numberAccount</p><p></p><p>Transaction</p><p>=========</p><p>private Long id</p><p>private String type</p><p>private LoalDate createDate</p><p>private Double amount</p><p>private Double balance</p><p>private Account account</p><p></p>|<p>accounts</p><p>========</p><p>id</p><p>name\_customer</p><p>number\_account</p><p></p><p>transactions</p><p>=========</p><p>id</p><p>type</p><p>create\_date</p><p>amount</p><p>balance</p><p>account\_id</p>|
+1. Debe entregar **un archivo Word con las capturas de pantalla de cada una de las historias de usuario solicitadas**. En cada captura de pantalla debe visualizar **su imagen en tiempo real capturada de su cámara** junto** al funcionamiento. El nombre del archivo debe tener la siguiente nomenclatura **api\_examen\_final\_YYYY.** Donde **YYYY** debe reemplazarlo por su código de alumno sin la letra “U”. Por ejemplo, si el código de alumno fuera u2015678 el nombre del proyecto seria api\_examen\_final \_2015678
+1. El **archivo comprimido con todas las funcionalidades solicitadas- código fuente de IntellijIdea**. El nombre del archivo debe tener la siguiente nomenclatura **api\_examen\_final\_YYYY.** Donde **YYYY** debe reemplazarlo por su código de alumno sin la letra “U”. Por ejemplo, si el código de alumno fuera u2015678 el nombre del proyecto seria api\_examen\_final \_2015678
+1. **Ud. Es responsable de entregar su examen a través del aula virtual, de lo contrario la nota será cero.**
+1. **Ud. Es responsable de entrega su examen dentro de los 170 minutos asignados, de lo contrario la nota será cero.**
 
+**Consideraciones importantes:**
 
+<a name="_hlk120624799"></a>**Proyecto**
 
-<a name="_hlk120624799"></a>**Datos del proyecto y base de datos**
-
-**Proyecto**
-
-- El nombre del proyecto debe tener la siguiente nomenclatura **api\_examen\_final\_XXXX.** Donde **XXXX** debe reemplazarlo por su código de alumno sin la letra “U”. Por ejemplo, si el código de alumno fuera u2015678 el nombre del proyecto seria api\_examen\_final \_2015678
+El nombre del proyecto debe tener la siguiente nomenclatura **api\_examen\_final\_YYYY.** Donde **YYYY** debe reemplazarlo por su código de alumno sin la letra “U”. Por ejemplo, si el código de alumno fuera u2015678 el nombre del proyecto seria api\_examen\_final \_2015678
 
 **Base de datos**
 
-- El nombre de la base de datos debe tener la siguiente nomenclatura **db\_examen\_final\_XXXX**. Donde XXXX debe reemplazarlo por su código de alumno sin la letra “U”. Por ejemplo, si el código de alumno fuera u2015678 el nombre de la base de datos seria db\_examen\_final\_2015678
-- El gestor de base de datos debe ser PostgreSQL. El nombre de las tablas debe ser “books” y “loans”
+El nombre de la base de datos debe tener la siguiente nomenclatura **db\_examen\_final\_YYYY**. Donde YYYY debe reemplazarlo por su código de alumno sin la letra “U”. Por ejemplo, si el código de alumno fuera u2015678 el nombre de la base de datos seria db\_examen\_final\_2015678
 
-<a name="_hlk120625218"></a>**Datos para probar API REST**
+**Variables** 
 
-En el anexo, página 8, encontrará ejemplos como referencia para realizar la prueba de su API en Postman o Swagger.
+<a name="_hlk120625218"></a>Las variables de todo el programa se encuentran en inglés
+
+Las variables de todo el programa cumplen el siguiente formato:
+
+**Variable:** age
+
+**Nombre del estudiante:** Juan Luis Pérez Reyes
+
+**Nombre de la variable:** jlprAge
+
+**Tecnologías a utilizar**
+
+- Spring MVC, Spring Boot, Spring Data JPA, Spring security
+- Patrón DTO
+- Postman
+- IntellijIdea
+- Postgres
+- Formato JSON
+
+**Funcionamiento de API REST**
+
+Se debe enviar las capturas de pantalla necesarias para verificar el funcionamiento completo de cada Historia de usuario solicitada, debe ser un archivo Word. Las capturas deben ser tomadas de Postman.
+
+**Postman** 
+
+Recuerde utilizar Postman para verificar el funcionamiento de la API, en cada una de las historias de usuario solicitadas.
 
 
-<a name="_hlk120624867"></a>**Requisitos no funcionales**
-
-- Puede utilizar Postman o Swagger para realizar la prueba del API REST.
-
-- El nombre de los endpoints (url) a utilizar en los controllers debe ser
-  - La ruta base de los endpoints debe ser /api/bank/v1
-  - La ruta para el registro de cuenta bancaria debe ser /api/bank/v1/accounts
-  - La ruta para el listado de cuentas bancarias debe ser /api/bank/v1/accounts
-  - La ruta para el registro de transacciones bancarias debe ser /api/bank/v1/accounts/{id
-  - }/transactions
-  - La ruta para el listado de transacciones por nombre de cliente /api/bank/v1/transactions/filterByNameCustomer
-  - La ruta para el listado de transacciones bancarias por rango de fechas debe ser /api/bank/v1/transactions/filterByCreateDateRange
 
 
-Página 1** de 2**
 
+
+**Enunciado:**
+
+**Caso:** Se le encarga el desarrollo de una API REST que permita las siguientes funcionalidades, tenga en cuenta las características dadas en la historia de usuario.
+
+**Requisitos funcionales**
+
+<a name="_hlk139551999"></a>**Registro de información:**
+
+**HUR01:** Como especialista en marketing quiero registrar campañas publicitarias para gestionarlas.
+
+**Criterios de aceptación:**
+
+\- Se utiliza el método POST para acceder al método.
+
+\- Se utiliza un token para acceder al método con el rol de especialista.
+
+\- Se consideran todos los campos dados en la tabla adjunta.
+
+\- Se accede únicamente con el rol ESPECIALISTA para este método.
+
+\- La ruta para registrar una campaña publicitaria es: api/campaigns.
+
+\- Se adjunta la captura en el documento en Word solicitado, utilizando Postman.
+
+\- Se utiliza el esquema aplicado en clase. El uso de sintaxis o estructuras no desarrolladas en clase anula el puntaje de la historia de usuario.
+
+**HUR02:** Como gerente de marketing quiero registrar metas de ventas para gestionarlas.
+
+**Criterios de aceptación:**
+
+\- Se utiliza el método POST para acceder al método.
+
+\- Se utiliza un token para acceder a la transacción con el rol de gerente.
+
+\- Se consideran todos los campos dados en la tabla adjunta.
+
+\- Se accede con el rol GERENTE para este método.
+
+\- La ruta para registrar una meta de ventas es: api/goals.
+
+\- Se adjunta la captura en el documento en Word solicitado, utilizando Postman.
+
+\- Se utiliza el esquema aplicado en clase. El uso de sintaxis o estructuras no desarrolladas en clase anula el puntaje de la historia de usuario.
+
+**Obtención de información:**
+
+**HUL01:** Como gerente de marketing quiero obtener el rendimiento de las campañas publicitarias.
+
+**Criterios de aceptación:**
+
+\- Se muestra el rendimiento total por campaña publicitaria.
+
+\- Se utiliza el token para acceder al método con el rol de gerente.
+
+\- Se utiliza el método GET para acceder al método.
+
+\- Se considera el rol GERENTE para acceder al método.
+
+\- La ruta base para mostrar el rendimiento de las campañas publicitarias por canal de marketing es: api/ campaigns/.
+
+\- No se ingresa el canal de marketing.
+
+\- Se adjunta la captura en el documento en Word solicitado, utilizando Postman.
+
+\- Se utiliza el esquema aplicado en clase. El uso de sintaxis o estructuras no desarrolladas en clase anula el puntaje de la historia de usuario**.**
+
+**Autenticación y autorización** 
+
+- **HUNF01**: Como usuario quiero autenticarme(login) para gestionar la app del restaurante
+
+**Criterios de aceptación:**
+
+- Verifica que el usuario y el password se encuentren en la base de datos de la app.
+- Verifica el rol asignado al usuario.
+- Verifica el password encriptado en la base de datos y se usa en la autenticación.
+- Genera un token como resultado de la autenticación.
+- Los roles y los usuarios se registran por base de datos.
+- El registro de usuario y roles se realiza directo en la base de datos, listos para la autenticación.
+- Genere las clases necesarias para realizar el registro de usuarios y roles por base de datos.
+- Adjunta su captura en el documento en Word solicitado, utilizando Postman.
+- Se usa el esquema aplicado en clase. El uso de sintaxis, estructuras no desarrolladas en clase, anula el puntaje de la historia de usuario.
+
+**Atributos de las clases:**
+
+Use la relación pertinente, debe ser una relación de JPA usada en clase.
+
+|**Clases**|
+| :- |
+|<p>**Campaña**</p><p>=======</p><p>private Int id</p><p>private String name</p><p>private date dateStart</p><p>private String chanelMarketing</p><p></p><p>**Meta**</p><p>=========</p><p>private Int id</p><p>private String name</p><p>private int performance</p><p>idCampaign clave foránea</p>|
+
+**
+
+**Rúbrica de Evaluación:**
+
+
+|**Criterio de Calificación** |**Excelente** |**Promedio** |**Deficiente** |**Calificación** |
+| :- | :- | :- | :- | :- |
+|**HUR01**  |<p>La historia de usuario funciona.</p><p>Se realiza el registro solicitado.</p><p>Se cumplen todos los criterios de aceptación de la historia de usuario dada.</p><p>Se adjunta la evidencia en el documento de Word.</p><p>Cumple con la ruta solicitada.</p><p></p>|<p>La historia de usuario funciona.</p><p>Se realiza el registro solicitado.</p><p>Se cumplen algunos de los criterios de aceptación dados en la historia de usuario.</p><p>Se adjunta la evidencia en el documento de Word.</p><p>Cumple con la ruta solicitada.</p><p></p>|<p>No funciona.</p><p>No registra.</p><p>No se cumplen la totalidad de los criterios de aceptación.</p><p></p>| |
+| |**3.0 puntos** |**1.5 puntos** |**0 puntos** | |
+|**HUR02**|<p>La historia de usuario funciona.</p><p>Se realiza el registro solicitado.</p><p>Se cumplen todos los criterios de aceptación de la historia de usuario dada.</p><p>Se adjunta la evidencia en el documento de Word.</p><p>Cumple con la ruta solicitada.</p><p></p>|<p>La historia de usuario funciona.</p><p>Se realiza el registro solicitado.</p><p>Se cumplen algunos de los criterios de aceptación dados en la historia de usuario.</p><p>Se adjunta la evidencia en el documento de Word.</p><p>Cumple con la ruta solicitada.</p><p></p>|<p>No funciona.</p><p>No registra.</p><p>No se cumplen la totalidad de los criterios de aceptación.</p><p></p>| |
+| |**4.0 puntos** |**1.5 puntos** |**0 puntos** | |
+|**HUL01**|<p>La historia de usuario funciona.</p><p>Se muestra el cálculo solicitado.</p><p>Se cumplen todos los criterios de aceptación de la historia de usuario dada.</p><p>Se adjunta la evidencia en el documento de Word.</p><p>Cumple con la ruta solicitada.</p><p></p>|<p>La historia de usuario funciona.</p><p>Se muestra el cálculo solicitado.</p><p>Se cumplen algunos de los criterios de aceptación dados en la historia de usuario.</p><p>Se adjunta la evidencia en el documento de Word.</p><p>Cumple con la ruta solicitada.</p><p></p>|<p>No funciona.</p><p>No muestra el cálculo.</p><p>No se cumplen la totalidad de los criterios de aceptación.</p><p></p>||
+||**4.0 puntos** |**2 puntos** |**0 puntos** ||
+|**HUNF01**|<p>Funciona, permite autenticarse.</p><p>Verifica que el usuario y el password se encuentren en la base de datos de la app</p><p>Verifica el rol asignado al usuario </p><p>Verifica el password encriptado en la base de datos y se usa en la autenticación.</p><p>Genera un token en la autenticación.</p>|<p>No aplica</p><p></p>|<p>No funciona.</p><p>No permite autenticarse.</p><p>No se cumplen la totalidad de los criterios de aceptación.</p><p>No genera el token.</p>| |
+| |**4.0 punto** ||**0 puntos** | |
+|**Uso de rutas** |Usa las rutas solicitadas de forma completa|No aplica|<p>No usa las rutas solicitadas.</p><p>Algunas rutas se cumplen.</p>||
+||**1 punto**||**0 puntos**||
+|**Nombre del proyecto y BD**|Usa los nombres solicitados para la BD y para el proyecto|**No aplica**|No coloca de forma completa los nombres solicitados para la BD y para el proyecto||
+||**1 punto**||**0 puntos**||
+|**Nombre de las variables**|Todos los nombres de las variables se encuentran en inglés y con las iniciales solicitadas.|**No aplica**|Algunas de las variables tienen el nombre en inglés y algunas con las iniciales solicitadas.||
+||**3.0 puntos** ||**1.5 puntos** ||
+|**Uso de código que no hace nada en el programa**|Se encuentra 1 línea o líneas de código que no hace nada en el programa. ||El código se encuentra limpio y guarda la estructura usada en clase.||
+||**-2 puntos**||**0 puntos**||
+|**Total** |**20 puntos** |**10 puntos** |**0 puntos** | |
+
+
+
+
+<a name="_hlk120624867"></a>Página 1** de 2**
